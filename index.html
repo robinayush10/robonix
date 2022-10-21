@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="preloader.css">
+	<link rel="stylesheet" href="navbar.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="donator.css">
+	<title>Robonix | Home</title>
+	<meta name="theme-color" content="#1e90ff">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="/static/img/favicon.png">
+	<meta property="og:title" content="MineFalls - Home">
+	<meta property="og:description" content="One of the best Minecraft SMPs that offers a close-to-vanilla experience.">
+	<meta name="description" content="One of the best Minecraft SMPs that offers a close-to-vanilla experience.">
+</head>
+
+<body bgcolor="black">
+	<div id="navbar">
+
+	<a href="/" id="logo"> <b>Robinix</b>
+  	<div id="navbar-right">
+		<a href="/">Robinix</a>
+		<b style="color: rgb(255, 255, 255);">.....</b>
+  	</div>
+</div>
+<style>
+
+/* Minecraft Style Menu */
+ .mc-menu {
+	 --btn-size: 30pt;
+	 display: grid;
+	 grid-template-columns: var(--btn-size) calc(var(--btn-size) * 10) var(--btn-size);
+	 grid-template-rows: 1;
+	 grid-template-areas: '.first.';
+	 align-items: center;
+}
+ .mc-menu .mc-button:nth-child(1) {
+	 grid-area: first;
+}
+/* Minecraft Style Button */
+ .mc-button {
+	 height: var(--btn-size);
+	 text-shadow: 2px 2px #24244A;
+	 width: calc(var(--btn-size) * 10);
+	 cursor: pointer;
+	 overflow: hidden;
+	 white-space: nowrap;
+	 user-select: none;
+	 background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
+	 image-rendering: pixelated;
+	 border: 2px solid #000;
+	/* Mouse over */
+	/* Button title */
+	/* Others */
+}
+
+ .mc-button:hover .title {
+	 background-color: rgba(100, 100, 255, .45);
+	 text-shadow: 2px 2px #202013 CC;
+	 color: #ffffa0;
+}
+ .mc-button:active .title {
+	 box-shadow: inset -2px -4px #000 4, inset 2px 2px #fff 5;
+}
+ .mc-button .title {
+	 width: 100%;
+	 height: 100%;
+	 padding-bottom: 0.3em;
+	 display: grid;
+	 justify-content: center;
+	 align-items: center;
+	 color: #ddd;
+	 text-shadow: 2px 2px #000 A;
+	 box-shadow: inset -2px -4px #000 6, inset 2px 2px #fff 7;
+}
+ .mc-button.full {
+	 width: 100%;
+	 height: 100%;
+}
+
+ .mc-button.lang .title {
+	 padding-bottom: 0;
+}
+
+
+.title-image{
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	display: block;
+}
+
+.box {
+	width: 47em;
+}
+</style>
+<br><br>
+	<div class="box">
+		<img src="static.png" class="title-image">
+		<h5 style="color:#0062ff; text-align:center;">---------------------------------------------------</h5>
+
+		<div style="display: flex; justify-content: center;">
+			<div class="mc-menu">
+				<div class="mc-button full" onclick="copyIP()"title="Click here to copy the IP">
+					<div class="title">Server IP: robinix.aternos.me</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+<div style="background: #ffae00; padding: 12px; margin: 12px 0px;">
+<h3><span style="color:rgb(255, 0, 21);">Need support?</span></h3>
+<h4>Check out our help channels, like: <br><b style="color:rgb(0, 85, 255)">#📣┃server-news</b> to keep up with our news, <br> <b style="color:rgb(0, 85, 255)">#🎫┃support-tickets</b> to ask your own questions or problems!</h4>
+</div>
+		<p class="lastTxt" style="text-align:center;">Join My Our Discord & Subscribe My YouTube Channel</p>
+		<p class="lastTxt" style="text-align:center;">Discord: <a href="https://dsc.gg/its-robinayush/" target="_blank">Join</a>
+        <p class="lastTxt" style="text-align:center;">YouTube: <a href="https://bit.ly/its_robinayush/" target="_blank">Subscribe</a>
+
+	</div><br><br><br>
+	
+
+<script>
+    var preload = document.createElement('div');
+    preload.className = "preloader"; 
+    preload.innerHTML = '<div style=" display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:1rem 1rem 2rem 1rem;box-sizing:border-box;overflow:hidden;height: 100%;width: 100%;background: #fff;position: fixed;left: 0;top: 0;z-index: 10000;perspective: 1600px;perspective-origin: 20% 50%;transition: 0.5s all;opacity: 1;"><h1 class="loaderTitle">Loading</h1><div class="rainbow-marker-loader"></div></div></div>'; 
+
+    document.body.appendChild(preload); window.addEventListener('load', function() { preload.className +=  ' fade'; setTimeout(function(){ preload.style.display = 'none'; },500); })
+	getplayerstotal()
+	function copyIP(){
+		navigator.clipboard.writeText("robinix.aternos.me");
+		alert("Server IP Has Been Copied To Your Clipboard!")
+	}
+    </script>
+    
+</body>
+</html>
